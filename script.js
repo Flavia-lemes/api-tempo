@@ -31,7 +31,7 @@ formulario.addEventListener('submit', async (e) => {
         await fetch(url)
        .then(res => res.json())
        .then(res => {
-        if (res.ok) {
+        if (res) {
             carregando.style.display = 'none'
             secao.style.display = 'flex'
             if (temperaturaC.textContent = res.current_condition[0].temp_C > 25) {
@@ -46,9 +46,6 @@ formulario.addEventListener('submit', async (e) => {
 
 
             console.log(res)
-        } else {
-            window.alert('Digite um nome válido!')
-            inputCidade.value = ''
         }
        })
        .catch(err => console.log(err));    
@@ -60,4 +57,5 @@ formulario.addEventListener('submit', async (e) => {
 fechar.addEventListener('click', () => {
     secao.style.display = 'none'
     inputCidade.value = ''
+
 })
