@@ -1,0 +1,75 @@
+body {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    border: solid 1px #5a99ec;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+section {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(5, 5, 5, 0.342);
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carregando {
+    display: none;
+    margin-top: 1rem;
+}
+
+#fechar {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: #5a99ec;
+    color: #fafafa;
+    border-radius: 50%;
+}
+
+input {
+    border: solid 1px #5a99ec;
+    outline: none;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: .5rem;
+    color: #5a99ec;
+}
+
+.tempo-container {
+    background-color: #fafafa;
+    display: flex;
+    height: 50%;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #b5d6f5;
+    border-radius: 15px;
+}
+
+.dado-container {
+    display: flex;
+    margin: 1rem;
+}

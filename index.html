@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Previsão do tempo</title>
+
+</head>
+<body>
+    <main>
+        
+        <h1>Clima agora</h1>
+        <p>Descubra em tempo real como está a previsão do tempo</p>
+        <form action="" id="formulario">
+        <input type="text" name="cidade" id="cidade" placeholder="Digite a cidade...">
+        <button><i class="bi bi-search"></i></button>
+        </form>
+        <p id="carregando">Carregando...</p>
+        <section id="secao">
+            <i class="bi bi-x-circle" id="fechar"></i>
+            <div class="tempo-container">
+                <h3>Clima em <b id="nomeCidade"></b></h3>
+                <div class="dado-container">
+                    <p id="dataAtual">01/11/2025</p>
+                </div>
+                <div class="dado-container">
+                    <p > Temperatura : <span id="temperaturaC"></span>º</p>
+                </div>
+                <div class="dado-container">
+                    <p>Sensação térmica <p id="sensacao"></p>º</p>
+                </div>
+                <div class="dado-container">
+                    <p >Humidade: <p id="humidade"></p>%</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
